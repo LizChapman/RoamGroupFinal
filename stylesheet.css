@@ -1,0 +1,448 @@
+
+* {
+margin: 0;
+padding: 0;
+    font-family: sans-serif;
+    color:white;
+    font-family: 'Amatic SC', cursive;
+    
+}
+
+body{
+    width:100%;
+    min-height: 100%;
+    margin:auto;
+   
+}
+.mainContainer{
+ 
+    margin:auto;
+    margin-top:30px;
+    
+}
+
+.aboutParent{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.about{
+  text-decoration: none;
+    color:darkslategray;
+    border: grey 1px solid;
+    padding: 7px 10px;
+    width:40px;
+    text-align: center;
+    margin:10px;
+    margin-right:0px;
+     background-color: rgba(66,64,47, .5);
+    color:white;
+    font-size: 17px;
+}
+
+.about:hover{
+    background-color: rgba(127,255,212, .2);
+    box-shadow: 0px 0px 20px palegoldenrod;
+    font-size: 20px;
+}
+
+.about:active{
+    font-size: 20px;
+    color:darkturquoise;
+}
+.homeButton{
+    padding: 1.8px 2px;
+    width:32px;
+     background-color: rgba(66,64,47, .5);
+        margin-top:10px;
+    border: grey 1px solid;
+    
+}
+.homeButton:hover{
+    background-color: rgba(127,255,212, .2);
+    box-shadow: 0px 0px 20px palegoldenrod;
+    width:35px;
+}
+
+.homeButton:active{
+    width:35px;
+}
+.titleBox{
+    display: flex;
+    position: relative;
+    border: white 0px 0px 1px 0px solid;
+    background-color: rgba(238,232,170, .75);
+    color:white;
+      box-shadow: 0px 0px 6px white;
+}
+
+.logo{
+    position: absolute;
+    border:white 2px solid;
+    width:56px;
+    height:56px;
+    padding:10px;
+    top:25px;
+    border-radius: 100%;
+    align-self: center;
+    margin-left: 10px;
+    margin-right: -15px;
+    background-color: rgba(127,255,212, .5)
+}
+
+.lookAroundBox{
+    border:palegoldenrod 10px solid;
+    width:50%;
+    max-width:350px;
+    height: 100px;
+    margin:auto;
+    margin-top: 80px;
+    display: flex;
+    flex-flow: column nowrap;
+    align-self: center;
+    text-align: center;
+    padding:35px;
+    color:white;
+    font-size: 26px;
+}
+
+button{
+    border: white 1px solid;
+    width: 150px;
+    margin-top: 24px;
+    font-size: 13px;
+    text-align: center;
+    height: 100%;
+    align-self: center;
+    display: flex;
+    align-items: center;
+    background-color: rgba(255,255,255, 0);
+    color:white;
+    position: relative;
+}
+
+button:active{
+    top:2px;
+    left:2px;
+    
+}
+
+.buttonText{
+    margin-left: 8px;
+    font-size: 22px;
+}
+
+
+.crosshair{
+    width:30px;
+    padding: 5px;
+    background-color:rgba(238,232,170, .45);
+}
+
+.SearchtheArea:hover{
+    background-color: rgba(127,255,212, .2);
+    box-shadow: 0px 0px 60px palegoldenrod;
+    border: 2px solid lightcyan;
+    width:44%;
+   
+   
+  
+}
+    
+.insetBorder{
+    border: grey 1px solid;
+    width:100%;
+    margin:auto;
+    padding-bottom: 75px;
+    box-sizing: border-box;
+   background-color: rgba(66,64,47, .7);
+}
+
+.footerParent{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    margin-top: 19px;
+    margin-bottom: 10px;
+    background-color:rgba(238,232,170, .35);
+    padding: 10px 0px;
+    font-size:18px;
+}
+video#bgvid { 
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    background: url(polina.jpg) no-repeat;
+    background-size: cover; 
+    
+}
+
+.roam{
+    font-size: 100px;
+    margin-left:93px;
+/*    font-family: 'Permanent Marker', cursive;*/
+     background: -webkit-linear-gradient(#CCFFFF, #E5FFCC);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: 'Coustard', serif;
+    
+}
+
+.tagline{
+    font-size: 32px;
+    margin-left: -22px;
+}
+
+.aboutAppBox{
+    display: flex;
+    position: relative;
+    margin-top: 30px;
+}
+
+.aboutApp{
+    margin-left:22px;
+    margin-right:5px;
+    margin-top: 14px;
+    font-size:28px;
+   
+}
+
+.Roam{
+    font-size:42px;
+        background: -webkit-linear-gradient(#CCFFFF, #E5FFCC);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: 'Coustard', serif;
+   
+}
+
+.appDescription{
+    width: 650px;
+    margin-left: 18px;
+    margin-top:-10px;
+    border: 10px palegoldenrod solid;
+    padding: 30px;
+    font-size: 20px;
+     background-color: rgba(66,64,47, .7);
+}
+
+.appDescription:hover{
+     box-shadow: 0px 0px 20px lightblue;
+}
+
+.meetTheTeam{
+    height: 100%;
+    padding:20px 0px;
+    padding-left: 8px;
+    padding-right:10px;
+    margin-left: 25px;
+    margin-top: 20px;
+     background-color: rgba(66,64,47, .7);
+    border-radius: 10%;
+}
+
+.meetTheTeam:hover{
+     box-shadow: 0px 0px 20px lightblue;
+}
+
+h1{
+    font-size: 70px;
+    margin-bottom: -25px;
+    margin-top: -18px;
+         background: -webkit-linear-gradient(#CCFFFF, #E5FFCC);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: 'Coustard', serif;
+    font-weight: 100;
+}
+
+.bottomSection{
+    display: flex;
+}
+
+.faceBoxBorder{
+    height:80%;
+    display: flex;
+    flex-direction: row;
+    background-color: rgba(238,232,170, .25);
+    padding:55px 12px;
+    border-radius: 5%;
+    margin-top: 26px;
+    margin-left: 20px;
+}
+
+.faceBoxBorder:hover{
+     box-shadow: 0px 0px 20px lightblue;
+}
+
+
+.Ganelle
+{
+    width:100px;
+    height: 100px;
+    border: white solid 3px;
+    border-radius: 100%;
+    margin:6px;
+    position: relative;
+  background: #CCFFFF; /* For browsers that do not support gradients */
+  background: -webkit-radial-gradient(circle, white, #CCFFFF, #660000 );  
+  background: -o-radial-gradient(circle, white, #CCFFFF, #660000 ); /* Opera 11.6 to 12.0 */
+  background: -moz-radial-gradient(circle, white, #CCFFFF, #660000 ); /* Firefox 3.6 to 15 */
+  background: radial-gradient(circle, white, #CCFFFF, #660000  ); /* Standard syntax */
+   
+}
+.Ganelle:hover{
+    filter:grayscale(100%);
+     box-shadow: 0px 0px 50px white;
+    width:110px;
+    height:150px;
+    border-radius: 25%;
+}
+
+.Liz
+{
+    width:100px;
+    height: 100px;
+    border: white solid 3px;
+    border-radius: 100%;
+    margin:6px;
+    position: relative;
+     background:#CCFFFF; /* For browsers that do not support gradients */
+  background: -webkit-radial-gradient(circle, white, #CCFFFF, #660000 ); /* Safari */
+  background: -o-radial-gradient(circle, white, #CCFFFF, #660000 ); /* Opera 11.6 to 12.0 */
+  background: -moz-radial-gradient(circle, white, #CCFFFF, #660000 ); /* Firefox 3.6 to 15 */
+  background: radial-gradient(circle, white, #CCFFFF, #660000 ); /* Standard syntax */
+}
+
+.Liz:hover{
+    filter:grayscale(100%);
+     box-shadow: 0px 0px 50px white;
+    width:110px;
+    height:150px;
+    border-radius: 25%;
+}
+
+.Curtis
+{
+    width:100px;
+    height: 100px;
+    border: white solid 3px;
+    border-radius: 100%;
+    margin:6px;
+/*    margin-left: 45px;*/
+    position: relative;
+     background: #CCFFFF; /* For browsers that do not support gradients */
+  background: -webkit-radial-gradient(circle, white, #CCFFFF, #660000 ); /* Safari */
+  background: -o-radial-gradient(circle, white, #CCFFFF, #660000 ); /* Opera 11.6 to 12.0 */
+  background: -moz-radial-gradient(circle, white, #CCFFFF, #660000 ); /* Firefox 3.6 to 15 */
+  background: radial-gradient(circle, white, #CCFFFF, #660000 ); /* Standard syntax */
+}
+
+.Curtis:hover{
+    filter:grayscale(100%);
+     box-shadow: 0px 0px 50px white;
+    width:110px;
+    height:150px;
+    border-radius: 25%;
+}
+
+.Troy
+{    width:100px;
+    height: 100px;
+    border: white solid 3px;
+    border-radius: 100%;
+    margin:6px;
+/*    margin-left: 45px;*/
+    position: relative;
+     background: #CCFFFF; /* For browsers that do not support gradients */
+  background: -webkit-radial-gradient(circle, white, #CCFFFF, #660000 ); /* Safari */
+  background: -o-radial-gradient(circle, white, #CCFFFF, #660000 ); /* Opera 11.6 to 12.0 */
+  background: -moz-radial-gradient(circle, white, #CCFFFF, #660000 ); /* Firefox 3.6 to 15 */
+  background: radial-gradient(circle, white, #CCFFFF, #660000  ); /* Standard syntax */
+
+}
+
+.Troy:hover{
+    filter:grayscale(100%);
+     box-shadow: 0px 0px 50px white;
+    width:110px;
+    height:150px;
+    border-radius: 25%;
+}
+
+.troyImg{
+    width:70%;
+    border-radius: 100%;
+    position: absolute;
+    left: 16px;
+    top:16px;  
+}
+
+.lizImg{
+    width:70%;
+    border-radius: 100%;
+    position: absolute;
+    left: 16px;
+    top:16px;  
+}
+
+.ganelleImg{
+    width:70%;
+    border-radius: 100%;
+    position: absolute;
+    left: 16px;
+    top:16px;  
+}
+
+.curtisImg{
+    width:70%;
+    border-radius: 100%;
+    position: absolute;
+    left: 16px;
+    top:16px;  
+}
+
+.socialMediaButtons>a>img{
+    background-color: transparent;
+    filter:invert(100%);
+    height:38px;
+  
+}
+
+.socialMediaButtons>a>img:hover{
+    box-shadow: 0px 0px 60px black;
+    border-radius: 100%;
+    transform: rotate(-45deg);
+}
+
+
+.socialMediaButtons>a>img:active{
+    top:2px;
+    left:2px;  
+}
+.socialMediaButtons{
+    position: relative;
+    display:flex;
+    width:300px;
+    margin:auto;
+    justify-content: space-around;
+    margin-top: 20px;
+    box-sizing: border-box;
+}
+
+.aboutContainer{
+    width:700px;
+    margin:auto;
+
+}
+
+

@@ -1,0 +1,67 @@
+<!DocType html>
+<html>
+<head>
+	<title></title>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+     <link href="https://fonts.googleapis.com/css?family=Amatic+SC|Coustard" rel="stylesheet">
+
+   
+    
+    <base href="/">
+</head>
+<body>
+    
+	<div ng-app="myApp">
+	<div class="aboutParent">  
+  <a class="about" href="#/aboutView">About</a>
+       <a href="#/resultsView"><img class="homeButton" src="home_white_24px.svg"></a>
+    </div>
+   <div class="mainContainer">
+       
+    <div class="titleBox">
+        <img class="logo" src="directions_walk_white_24px.svg">
+        <div class="title">
+            <span class="roam">Roam. </span><span class="tagline">Not All Who Wander Are Lost.</span>
+        </div>
+    </div>
+    
+    <div class="imageBox">
+        <video playsinline autoplay muted loop id="bgvid">
+            <source src="Video2.mp4" type="video/mp4">
+        </video>
+        
+        <div class="insetBorder">
+            
+                <ng-view>
+                 
+                </ng-view>
+       
+            
+        </div>
+    </div>
+ 
+    </div>
+    <div class="socialMediaButtons">
+        <a href=""><img  src="facebook-5.svg"></a>
+        <a href=""><img src="twitter-5.svg"></a>
+        <a href=""><img src="instagram-15.svg"></a>
+        <a href=""><img src="linkedin-5.svg"></a>
+        <a href=""><img src="github-5.svg"></a>
+    </div>
+<div class="footerParent">   
+<div class="footer"><p>Copywrite 2017  |  Detroit, MI  | <a href="aboutView.html">About This App</a></p></div></div> 	
+
+         
+          </div>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.6/angular.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.6/angular-route.js"></script>
+	<script src="app.js"></script>
+	<script src="maincontroller.js"></script>
+    <script src= "resultscontroller.js"></script>
+    <script src="Factory.js"></script>
+
+</body>
+</html>
