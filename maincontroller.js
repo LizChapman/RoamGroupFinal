@@ -1,11 +1,7 @@
 var app = angular.module("myApp");
 
-app.controller('maincontroller', function($scope, $http, Factory, $location) {
-Factory.getPosts().then(function(response){
-$scope.venues = response;
-console.log($scope.venues);
-}); 
-    
+app.controller('maincontroller', function($scope, Factory, $location) {
+Factory.getPosts();
 $scope.searchArea = function(){
      
 $location.path('/resultsView');
