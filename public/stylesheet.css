@@ -445,4 +445,15 @@ h1{
 
 }
 
+.SeatGeek{
+    border: 5px green solid;
+}
+
+.Twitter{
+    border: 5px yellow solid;
+}
+
+.FourSquare{
+    border: 5px pink solid;
+}
 

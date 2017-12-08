@@ -1,4 +1,3 @@
-
 <div>
 Results View Test
 </div>
@@ -18,16 +17,22 @@ Results View Test
 </div>
 </div>
 
-<div class="Twitter">
- <div  ng-repeat = "">
-    </div>
-</div>
 
 <div class="SeatGeek">
-    <div  ng-repeat = "">
+    <div  ng-repeat = "seat in events | limitTo: 30">
+        
+        <h2>{{seat.title}}</h2>
+        
     </div> 
 </div>
 
+<div class="Twitter">
+ <div  ng-repeat = "tweet in statuses | limitTo: 10">
+     
+     <h2>{{tweet.text}}</h2>
+     
+    </div>
+</div>
 
     
 
