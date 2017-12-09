@@ -35,12 +35,23 @@
 
 
 <div class="Twitter">
- <div  ng-repeat = "tweet in statuses | limitTo: 10">
-     
-     <h2>{{tweet.text}}</h2>
-     
+        <div class="containter3">
+            <div ng-repeat="tweet in statuses | limitTo: 10">
+    
+                <div class="profileimg">
+                    <img src={{tweet.user.profile_image_url}}>
+                </div>
+    
+                <div class="tweettext">
+                    <h2>{{tweet.text}}</h2>
+                </div>
+                <div class="mediaimg">
+                    <img src={{tweet.extended_entities.media[0].media_url}}>
+                </div>
+    
+            </div>
+        </div>
     </div>
-</div>
 
 
 <img id="map" width="600" src="https://maps.googleapis.com/maps/api/staticmap?center={{location}}&zoom=15&scale=1&size=700x500&maptype=roadmap&format=png&visual_refresh=true&markers=size:mid%7Ccolor:0xff0000%7Clabel:%7C{{location}}" alt="Roam in Your Area">
