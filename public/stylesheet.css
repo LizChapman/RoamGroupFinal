@@ -460,6 +460,7 @@ h1{
 .foursquareResult
 {
     border: 1px white solid;
+    height: 100px;
 }
 .seatgeekResults
 {
@@ -470,8 +471,7 @@ h1{
   #map {
         filter:hue-rotate(125deg);
       border-radius: 10%;
-      
-       }
+    }
 
        .container3{
         display: flex;
@@ -490,4 +490,21 @@ h1{
     width: 130px;
     justify-content: center;
     }
+    
+.fourInfo {
+    margin-left: 10px;
+    padding: 10px;
+    margin-left: 10px;
+    }
+    
+.fourName {
+    font-family: 'Spectral SC', serif;
+    font-size: 25px;   
+    }
+    
+.fourLocation {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    }
+    
     
