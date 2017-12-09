@@ -18,19 +18,20 @@
 </div>
 
 
-<div class="SeatGeek">
-    <div ng-repeat="seat in events">
+div class="SeatGeek">
+    <div  ng-repeat = "seat in events">
         <div class="seatgeekResults">
-            <p>{{seat.title}}</p>
-            <p>{{seat.datetime_local}}</p>
-            <p>{{seat.venue.name}}</p>
-            <button>
-                <a href="{{seat.venue.url}}">Buy Tickets</a>
-            </button>
-        </div>
+        <p id="sgTitle">{{seat.title}}</p>
+        <p id= "sgType">{{seat.type}}</p>    
+        <p id="sgDateTime">{{seat.datetime_local |date: format: 'MMM d, y, h:mm:ss a'}}</p>
+        <p id="sgVenueName">{{seat.venue.name}}</p>
+        <p id="sgAddress">{{seat.venue.address}}, {{seat.venue.city}}</p> 
+          
+        <button id="buyTixBut"><a id ="buttText" target ="_blank" href="{{seat.venue.url}}">Buy Tickets</a></button>
+    </div>
 
     </div>
-</div>
+
 
 
 

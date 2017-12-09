@@ -465,9 +465,60 @@ h1{
 .seatgeekResults
 {
     border: 1px white solid;
+    height: 350 px;
+    width: 50%;
+    margin-right: 100 px;
+    display: flex;
+    flex-direction: column;
+    break-after: always;
+    
+}
+#sgTitle{
+    font-size: 40px;
+    color: beige;
+    text-align:center;
+    text-decoration: underline;
+}
+#sgDateTime{
+    font-size: 30px;
+    Color: white;
+    text-align: center;
+}
+#sgVenueName{
+    font-size: 30px;
+    color: white;
+    text-align: center;
+        
+}
+#sgAddress{
+    font-size:25px;
+    color: white;
+    text-align: center;
+    
+}
+#sgType{
+    font-size:30px;
+    color:white;
+    text-align: center;
+}
+#buyTixBut{
+    align-self:flex-start;
+      background-color: palegreen;
+      padding:1rem 1rem;
+      margin:0 1rem;
+      transition:all .5s ease;
+      color:#41403E;
+      font-size:2rem;
+      letter-spacing:1px;
+      outline:none;
+      box-shadow: 20px 38px 34px -26px hsla(0,0%,0%,.2);
+      border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+    
 }
 
-
+#buttText{
+    text-decoration: none;
+}
   #map {
         filter:hue-rotate(125deg);
       border-radius: 10%;
