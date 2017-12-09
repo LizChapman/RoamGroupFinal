@@ -457,3 +457,10 @@ h1{
     border: 5px pink solid;
 }
 
+  #map {
+        height: 400px;
+        width: 600px;
+      border-radius: 10%;
+      
+       }
+

@@ -1,6 +1,6 @@
 var app = angular.module("myApp");
 
-app.controller('resultscontroller', function($scope, $timeout, Factory, seatgeekFactory, TwitterFactory, $location) {
+app.controller('resultscontroller', function($scope, $timeout, Factory, seatgeekFactory, TwitterFactory, $location, geoFactory) {
 Factory.getPosts().then(function(response){
 $timeout($scope.venues = response);
 console.log($scope.venues);
@@ -16,6 +16,9 @@ $timeout($scope.statuses = response);
 console.log($scope.statuses);
 });    
     
+geoFactory.getLocation().then(function(location){
+    $scope.location = `${location.latitude},${location.longitude}`;
+});
 $scope.backtoResults = function(){
     
  
