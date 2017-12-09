@@ -5,7 +5,7 @@ app.factory('TwitterFactory', function($http, geoFactory){
     };
 
     function getTweets () {
-        var search = 'detroit';
+        var search = 'red wings';
         var headers ={ 
             authorization: 'Bearer AAAAAAAAAAAAAAAAAAAAAArR3QAAAAAAqFlSTW6HsfIhjWONcJBu%2FeDkxKc%3DqraFuk6WVbzQh1gWofY2XJewHa9nwEIYKHTvzAHJBEDwwKpS7n'
         };
