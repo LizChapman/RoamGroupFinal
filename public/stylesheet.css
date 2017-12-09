@@ -71,7 +71,7 @@ body{
     display: flex;
     position: relative;
     border: white 0px 0px 1px 0px solid;
-    background-color: rgba(238,232,170, .75);
+    background-color: rgba(238,232,170, .9);
     color:white;
       box-shadow: 0px 0px 6px white;
 }
@@ -457,9 +457,18 @@ h1{
     border: 5px pink solid;
 }
 
+.foursquareResult
+{
+    border: 1px white solid;
+}
+.seatgeekResults
+{
+    border: 1px white solid;
+}
+
+
   #map {
-        height: 400px;
-        width: 600px;
+        filter:hue-rotate(125deg);
       border-radius: 10%;
       
        }

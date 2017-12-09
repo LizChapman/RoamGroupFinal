@@ -1,15 +1,16 @@
 
-<div>
-Results View Test
-</div>
 
 <div class="FourSquare">
-<div  ng-repeat = "item in venues | limitTo: 30">
-    
-    <h2>{{item.name}}</h2>
-    <h2>{{item.hours}}</h2>
-    <h2>{{item.ratings}}</h2>
-    <h2>{{item.tips}}</h2>
+<div  ng-repeat = "item in venues | limitTo: 10">
+  
+    <div class="foursquareResult">
+    <p class="fourName">{{item.name}}</p>
+    <p>{{item.contact.formattedPhone}}</p>
+    <p>{{item.location.address}}</p>
+    <p>{{item.url}}</p>
+    <p>{{item.menu.url}}</p>
+  
+    </div>
 <!--
     <h2>{{item.location}}</h2>
     <h2>{{item.id}}</h2>
@@ -20,12 +21,18 @@ Results View Test
 
 
 <div class="SeatGeek">
-    <div  ng-repeat = "seat in events | limitTo: 30">
-        
-        <h2>{{seat.title}}</h2>
+    <div  ng-repeat = "seat in events">
+        <div class="seatgeekResults">
+        <p>{{seat.title}}</p>
+        <p>{{seat.datetime_local}}</p>
+        <p>{{seat.venue.name}}</p>
+        <button><a href="{{seat.venue.url}}">Buy Tickets</a></button>
+    </div>
         
     </div> 
 </div>
+
+
 
 <div class="Twitter">
  <div  ng-repeat = "tweet in statuses | limitTo: 10">
@@ -35,8 +42,8 @@ Results View Test
     </div>
 </div>
 
-<h3>My Google Maps Demo</h3>
-<img width="600" src="https://maps.googleapis.com/maps/api/staticmap?center={{location}}&zoom=13&scale=1&size=600x300&maptype=roadmap&format=png&visual_refresh=true&markers=size:mid%7Ccolor:0xff0000%7Clabel:%7C{{location}}" alt="Roam in Your Area">
+
+<img id="map" width="600" src="https://maps.googleapis.com/maps/api/staticmap?center={{location}}&zoom=15&scale=1&size=700x500&maptype=roadmap&format=png&visual_refresh=true&markers=size:mid%7Ccolor:0xff0000%7Clabel:%7C{{location}}" alt="Roam in Your Area">
     
   
 	
