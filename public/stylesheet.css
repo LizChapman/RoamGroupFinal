@@ -477,14 +477,17 @@ h1{
         display: flex;
     }       
     .profileimg img {
+    justify-content: flex-start;    
     border-radius: 100%;
     }
     
     .tweettext {
+    justify-content: 
     
     }
     
     .mediaimg img {
     width: 130px;
+    justify-content: center;
     }
     
