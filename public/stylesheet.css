@@ -241,7 +241,7 @@ video#bgvid {
     line-height: 1.5em;
      background-color: rgba(66,64,47, .7);
     color:white;
-    font-family: serif;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .appDescription:hover{
