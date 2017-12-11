@@ -1,62 +1,76 @@
-<div class="FourSquare">
-    <div ng-repeat="item in venues | limitTo: 10">
 
-        <div class="foursquareResult">
+
+<div class="resultsContainer">
+<div class="resultTop">
+
+    
+    
+<div class="scrollbuttons">
+<img id="knifeIcon"src="media/knife.svg">
+<img id="ticketIcon"src="media/ticket.svg">
+<img id="twitterIcon" src="media/twitter.svg">
+ </div>
+    
+<img id="map" src="https://maps.googleapis.com/maps/api/staticmap?center={{location}}&zoom=15&scale=1&size=850x450&maptype=roadmap&format=png&visual_refresh=true&markers=size:lrg%7Ccolor:0xff6666%7Clabel:%7C{{location}}" alt="Roam in Your Area">
+
+ 
+    
+</div>  
+
+<div class="foursquareBox">
+    <p class="eatAroundHere">Grab a bite.</p>
+    <div class="fourContentBox">
+        <div class="foursquareResult" ng-repeat="item in venues | limitTo: 10">
             <div class="fourInfo">
                 <p class="fourName">{{item.name}}</p>
-                <p class="fourLocation">{{item.location.address}}</br>
-                    {{item.contact.formattedPhone}} {{item.url}} {{item.menu.url}}
-                </p>
+                <div class="fourLocation"><p>{{item.location.address}}</p>
+                <p>{{item.contact.formattedPhone}}</p><p> {{item.url}}</p> 
+                </div>
             </div>
         </div>
-        <!--
-        <h2>{{item.location}}</h2>
-        <h2>{{item.id}}</h2>
-    -->
-
     </div>
 </div>
-
-
-div class="SeatGeek">
-    <div  ng-repeat = "seat in events">
-        <div class="seatgeekResults">
-        <p id="sgTitle">{{seat.title}}</p>
-        <p id= "sgType">{{seat.type}}</p>    
-        <p id="sgDateTime">{{seat.datetime_local |date: format: 'MMM d, y, h:mm:ss a'}}</p>
-        <p id="sgVenueName">{{seat.venue.name}}</p>
-        <p id="sgAddress">{{seat.venue.address}}, {{seat.venue.city}}</p> 
+    
+    
+    
+<div class="seatgeekBox">
+    <p class="seeAroundHere">Get some tickets.</p>
+    <div class="fourContentBox">
+        <div class="foursquareResult" ng-repeat = "seat in events">
+            <div class="fourInfo">
+                <p class="fourName">{{seat.title}}</p>    
+                <p class="fourLocationdate">{{seat.datetime_local |date: format: 'MMM d, y, h:mm:ss a'}}</p>
+                <p class="fourLocation">{{seat.venue.name}}</p>
+                <p class="fourLocation">{{seat.venue.address}}, {{seat.venue.city}}</p> 
           
-        <button id="buyTixBut"><a id ="buttText" target ="_blank" href="{{seat.venue.url}}">Buy Tickets</a></button>
-    </div>
-
-    </div>
-
-
-
-
-<div class="Twitter">
-    <div class="containter3">
-        <div ng-repeat="tweet in statuses | limitTo: 10">
-
-            <div class="columntweet">
-                <div class="profileimg">
-                    <img src={{tweet.user.profile_image_url}}>
-                </div>
-
-                <div class="tweettext">
-                    <p>{{tweet.text}}</p>
-                </div>
-            </div>
-            <div class="mediaimg">
-
-                <img ng-hide='img === tweet.extended_entities.media[0].media_url' class="img" src={{tweet.extended_entities.media[0].media_url}}>
+                <button id="buyTixBut"><a id ="buttText" target ="_blank" href="{{seat.venue.url}}">Buy Tickets</a></button>
             </div>
         </div>
     </div>
 </div>
 
+        
+    
+<div class="twitterBox">
+    <p class="buzzAroundHere">See local buzz.</p>
+    <div class="fourContentBox">
+        <div class="foursquareResult" ng-repeat="tweet in statuses | limitTo: 10">
+            <div class="fourInfoTwitter">
+               <div class="fourInfotwit">
+                    <img class="profileImage" src={{tweet.user.profile_image_url}}>
+                            
+                    <div class="tweetauthor">
+                                <p>{{tweet.user.name}} | {{tweet.user.screen_name}} | {{tweet.user.location}}</p>
+                    </div>
+                </div> 
+                    <p class="tweettext">{{tweet.text}}<img class="mediaimg" ng-hide='img === tweet.extended_entities.media[0].media_url' class="img" src={{tweet.extended_entities.media[0].media_url}}></p>
+                 
+                     
+            </div>
+        </div>
+    </div>
+</div>
+</div>
 
 
-<img id="map" width="600" src="https://maps.googleapis.com/maps/api/staticmap?center={{location}}&zoom=15&scale=1&size=700x500&maptype=roadmap&format=png&visual_refresh=true&markers=size:mid%7Ccolor:0xff0000%7Clabel:%7C{{location}}"
-    alt="Roam in Your Area">
+  
