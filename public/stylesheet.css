@@ -1261,6 +1261,21 @@ font-size:18px;
     
 }
 
+    #knifeIcon:hover{
+    box-shadow: 0px 0px 20px palegoldenrod;
+    width:22px;
+        height:22px;
+}
+        #ticketIcon:hover{
+    box-shadow: 0px 0px 20px palegoldenrod;
+    width:22px;
+        height:22px;
+}    #twitterIcon:hover{
+    box-shadow: 0px 0px 20px palegoldenrod;
+    width:22px;
+        height:22px;
+}
+
     
 }
 
