@@ -77,6 +77,11 @@ body{
 /*    background-color: rgba(238,232,170, .9);*/
     background-color: rgba(66,64,47, .85);
     color:white;
+    flex-wrap: nowrap;
+}
+
+.title{
+    flex-wrap: nowrap;
 }
 
 .logo{
@@ -208,7 +213,7 @@ video#bgvid {
 
 .aboutAppBox{
     display: flex;
-    position: relative;
+/*    position: relative;*/
     margin-top: 30px;
 }
 
@@ -218,6 +223,7 @@ video#bgvid {
     margin-top: 14px;
     font-size:28px;
     color:white;
+    flex-wrap: wrap;
    
 }
 
@@ -231,7 +237,7 @@ video#bgvid {
 }
 
 .appDescription{
-    width: 650px;
+    
     margin-left: 18px;
     margin-top:-10px;
     margin-bottom: 30px;
@@ -242,6 +248,9 @@ video#bgvid {
      background-color: rgba(66,64,47, .7);
     color:white;
     font-family: 'Montserrat', sans-serif;
+    white-space: normal;
+    flex-wrap: wrap;
+    
 }
 
 .appDescription:hover{
@@ -437,7 +446,11 @@ h1{
     border: white 1px solid;
     padding: 10px 10px 10px 0px;
     background-color: rgba(69,69,69, .2);
-   
+}
+
+foursquareResult:hover{
+    box-shadow: 0px 0px 20px palegoldenrod;
+    width:32px;
 }
 
 .seatgeekResults
@@ -487,23 +500,35 @@ h1{
     text-align: center;
     justify-content: center;
     width:120px;
-    height: 50px;
-    height: 50px;
+    height:50px;
     margin-top: 20px;
     background-color: rgba(69,69,69, .2);
     margin-left: 10px;
     margin-bottom: 10px;
     box-shadow: 0px 0px 6px dimgray;
     
-    
-     
-    
+}
+
+#buyTixBut:hover{
+    border: palegoldenrod 3px solid;
+    height: 54px;
+    width: 124px;
+    box-shadow: 0px 0px 20px lightblue;
+    background-color: rgba(127,255,212, .2);
+   
+}
+
+#buyTixBut:active{
+      top:2px;
+    left:2px;
+   
 }
 
 #buttText{
     text-decoration: none;
-    color: darkslategray;
-    font-size: 24px;
+    font-size: 28px;
+    color: mediumseagreen;
+
 }
  
 */
@@ -566,8 +591,26 @@ h1{
     color:darkslategray;
     background-color: rgba(69,69,69, .2);
     border-radius: 5%;
-  
+    box-shadow: 0px 0px 8px black;
     }
+
+.fourInfotwit:hover{
+    box-shadow: 0px 0px 20px lightblue;
+}
+
+.foursquareResulttwit
+{
+    border: white 1px solid;
+    padding: 10px 10px 10px 0px;
+    background-color: ghostwhite;
+    box-shadow: 0px 0px 8px black;
+}
+
+.foursquareResulttwit:hover{
+    background-color: mintcream;
+    
+
+}
 
 .fourInfoTwitter {
     display: flex;
@@ -578,6 +621,7 @@ h1{
     color:darkslategray;
     background-color: rgba(69,69,69, .2);
     border-radius: 5%;
+      box-shadow: 0px 0px 8px black;
     
     }
 
@@ -586,12 +630,19 @@ h1{
     display: flex;
     flex-flow: column nowrap;
     margin-left: 10px;
-    padding: 10px;
-    margin-left: 10px;
+    padding: 12px;
     color:darkslategray;
-    background-color: rgba(69,69,69, .2);
+    background-color: ghostwhite;
     border-radius: 5%;
+    box-shadow: 0px 0px 8px black;
     }
+
+.fourInfo:hover{
+    background-color: mintcream;
+    box-shadow: 0px 0px 10px white;
+    
+
+}
 
     
 .fourName {
@@ -633,6 +684,7 @@ h1{
 /*    position: relative;*/
      box-shadow: 0px 0px 10px black;
    box-sizing: border-box;
+    max-width: 1000px;
     
     
     
@@ -654,6 +706,7 @@ h1{
     box-shadow: 0px 0px 10px black;
     box-sizing: border-box;
     color:darkslategray;
+     max-width: 1000px;
 }
 
 .fourName, .fourLocation{
@@ -683,6 +736,7 @@ h1{
     box-shadow: 0px 0px 20px black;
     box-sizing: border-box;
     color:darkslategray;
+     max-width: 1000px;
 }
 
 
@@ -699,6 +753,7 @@ h1{
     box-shadow: 0px 0px 10px black;
     box-sizing: border-box;
     color:darkslategray;
+     max-width: 1000px;
 }
 
 
@@ -733,6 +788,11 @@ h1{
     box-shadow: 0px 0px 15px black;
 }
 
+#knifeIcon:hover{
+    box-shadow: 0px 0px 20px palegoldenrod;
+    width:32px;
+}
+
 #twitterIcon{
     margin:auto;
     width:30px;
@@ -744,6 +804,11 @@ h1{
     box-shadow: 0px 0px 15px black;
 }
 
+#twitterIcon:hover{
+    box-shadow: 0px 0px 20px palegoldenrod;
+    width:32px;
+}
+
 #ticketIcon{
     margin:auto;
     width:30px;
@@ -753,6 +818,11 @@ h1{
     border-radius:100%;
     background-color: skyblue;
     box-shadow: 0px 0px 15px black;
+}
+
+#ticketIcon:hover{
+    box-shadow: 0px 0px 20px palegoldenrod;
+    width:32px;
 }
 
 #map{
@@ -771,6 +841,12 @@ h1{
     padding:10px;
 }
 
+#map:hover{
+    box-shadow: 0px 0px 60px lightblue;
+    
+}
+}
+
 .back{
     border: palegoldenrod 1px solid;
     text-align: center;
@@ -785,12 +861,24 @@ h1{
 
 .eatAroundHere, .buzzAroundHere, .seeAroundHere{
     font-size:28px;
-        background: -webkit-linear-gradient(#CCFFFF, #E5FFCC);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color:darkseagreen;
     font-family: 'Coustard', serif;
-    filter:brightness(70%);
     margin-left: 10px;
+}
+
+.eatAroundHere:hover{
+   text-shadow: 0 0 40px palegoldenrod;
+    font-size: 32px;
+}
+
+.seeAroundHere:hover{
+    text-shadow: 0 0 40px palegoldenrod;
+    font-size: 32px;
+}
+
+.buzzAroundHere:hover{
+   text-shadow: 0 0 40px palegoldenrod;
+    font-size: 32px;
 }
 
 .fourContentBox, .seatContentBox, .twitContentBox{
@@ -811,7 +899,7 @@ h1{
 }
 
 .modal {
-    display: none; /*You will comment this out so you can see the functionality of the modal*/
+    display: none; You will comment this out so you can see the functionality of the modal
     position: fixed;
     z-index: 1;
     left: 0;
@@ -841,4 +929,364 @@ h1{
     color: black;
     text-decoration: none;
     cursor: pointer;
+}
+
+.upone{
+    display: flex;
+    width:30px;
+    height:30px;
+    border: palegoldenrod 1px solid;
+    padding:3px;
+    background-color: rgba(69, 69, 69, .3);
+    filter:contrast(170%);
+    border-radius: 100%;
+    margin-left:20px;
+    margin-bottom: 15px;
+    box-shadow: 0px 0px 10px dimgray;
+}
+
+.upone:hover{
+    width:31px;
+    height:31px;
+    box-shadow: 0px 0px 15px dimgray;
+    border: palegoldenrod 3px solid;
+    background-color: rgba(127,255,212, .2);
+    
+}
+
+.uptwo:hover{
+    width:31px;
+    height:31px;
+    box-shadow: 0px 0px 15px dimgray;
+    border: palegoldenrod 3px solid;
+    background-color: rgba(127,255,212, .2);
+    
+}
+
+.uptwo{
+    display: flex;
+    width:30px;
+    height:30px;
+    border: palegoldenrod 1px solid;
+    padding:3px;
+    background-color: rgba(69, 69, 69, .3);
+    filter:contrast(170%);
+    border-radius: 100%;
+    margin-left:20px;
+    margin-bottom: 15px;
+     box-shadow: 0px 0px 10px dimgray;  
+}
+
+.uptwoBox, .uponeBox{
+    width:74%;
+    display: flex;
+    flex-flow: row nowrap;
+       
+}
+
+.back{
+    border: palegoldenrod 1px solid;
+    text-align: center;
+    justify-content: center;
+    width:120px;
+    height: 50px;
+    font-size: 18px;
+    margin: auto;
+    margin-top: 60px;
+}
+
+.back:hover{
+     border: palegoldenrod 3px solid;
+    height: 56px;
+    width: 126px;
+    box-shadow: 0px 0px 20px lightblue;
+    background-color: rgba(127,255,212, .2);
+}
+
+.foodUrl{
+    text-decoration: none;
+    font-size:16px;
+    color: mediumseagreen;
+    font-family: sans-serif;
+}
+
+.smallTeam, .smallTeam2{
+    display: none;
+}
+
+/*begin media queries___________________________*/
+
+@media only screen and (max-width: 400px) {
+   
+    video#bgvid {
+        display:none;
+    }
+    
+    .tagline{
+        margin-left:18%; 
+        font-size: 26px;
+    }
+    
+    .roam{
+        font-size: 59px;
+        margin-left:33%;
+        
+    }
+    
+    .logo{
+        width:30px;
+        height:30px;
+        margin-top: -12px;
+        margin-left: 10%;
+    }
+    
+    body{
+        background-color: #FFFFEE;
+    }
+    
+   
+.SearchtheArea:hover{
+    background-color: rgba(127,255,212, .2);
+    box-shadow: 0px 0px 60px palegoldenrod;
+    border: 2px solid lightcyan;
+   width:auto; 
+}
+    
+    .buttonText:hover{
+        padding:4px;
+    }
+    
+    .appDescription{
+        font-size: 12px;
+        width:270px;
+        box-sizing: border-box;
+    }
+    
+    .meetTheTeam{
+     display:none;
+    }
+    
+    .faceBoxBorder{
+        width:270px;
+    border-radius:0%;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(66,64,47, .7);
+    padding:20px 12px;
+    border: palegoldenrod 10px solid;
+        justify-content: center;
+        align-content: center;
+        box-sizing: border-box;
+}
+    
+    .Curtis, .Ganelle, .Liz, .Troy{
+       display: none;
+    }
+    
+    .smallTeam, .smallTeam2{
+     
+        display:flex;
+    }
+    
+    .smallTeam2>a{
+        text-decoration: none;
+        color:white;
+        margin:3px;
+        
+    }
+    
+    .smallTeam{
+        
+        color:mediumseagreen;
+        font-size: 28px;
+    }
+    
+    .smallTeam2{
+        flex-direction: column;
+    }
+    
+    .back{
+        margin-left:100px;
+    border: palegoldenrod 1px solid;
+/*    text-align: center;*/
+    width:120px;
+    height: 50px;
+    font-size: 18px;
+    margin-top: 60px;
+        
+    }
+    
+    #twitterIcon, #knifeIcon, #ticketIcon{
+        width:20px;
+        height: 20px;
+        
+    }
+    .scrollbuttons{
+       
+         width:15%;
+    max-width: 100px;
+    min-height:300px;
+      background-color: rgba(238, 232, 170, .25);
+    display: flex;
+    flex-flow: column nowrap;
+    border-radius:10%;
+/*    padding:80px 740px 80px 10px;*/
+  
+    margin-left: 0px;
+    box-shadow: 0px 0px 10px white;
+    padding:10px;
+    
+    }
+    
+    #map{
+    transform: rotate(90deg);
+    width:90%;
+    max-width: 680px;
+    margin-left: -20px;
+    border-radius: 10%;
+    filter:hue-rotate(70deg);
+        margin-bottom: 70px;
+    box-shadow: 0px 0px 10px white;
+    padding:10px;
+     
+    }
+    .foodUrl{
+        font-size: 10px;
+    } 
+    .eatAroundHere, .buzzAroundHere, .seeAroundHere{
+    font-size:18px;
+    color:darkseagreen;
+    font-family: 'Coustard', serif;
+    margin-left: 10px;
+}
+    
+    .tweetauthor{
+        font-size: 14px;
+        word-break: break-all;
+    }
+    
+    .tweettext{
+        font-size: 12px;
+    }
+   .profileImage{ 
+    display: none;
+   
+    }
+    
+    .mediaimg:hover{
+      max-width: 80px;
+    margin-left: 5%;
+    margin-bottom: -17px;
+    border-radius: 5%;
+}
+
+
+.eatAroundHere:hover{
+font-size:18px;
+    color:darkseagreen;
+    font-family: 'Coustard', serif;
+    margin-left: 10px;
+}
+
+.seeAroundHere:hover{
+    font-size:18px;
+    color:darkseagreen;
+    font-family: 'Coustard', serif;
+    margin-left: 10px;
+}
+
+.buzzAroundHere:hover{
+   font-size:18px;
+    color:darkseagreen;
+    font-family: 'Coustard', serif;
+    margin-left: 10px;
+}
+
+.uptwo{
+    display: flex;
+    width:20px;
+    height:20px;
+    border: palegoldenrod 1px solid;
+    padding:3px;
+    background-color: rgba(69, 69, 69, .3);
+    filter:contrast(170%);
+    border-radius: 100%;
+    margin-left:20px;
+    margin-bottom: 15px;
+     box-shadow: 0px 0px 10px dimgray;  
+}
+
+
+.upone{
+    display: flex;
+    width:20px;
+    height:20px;
+    border: palegoldenrod 1px solid;
+    padding:3px;
+    background-color: rgba(69, 69, 69, .3);
+    filter:contrast(170%);
+    border-radius: 100%;
+    margin-left:20px;
+    margin-bottom: 15px;
+    box-shadow: 0px 0px 10px dimgray;
+}
+    
+    .upone:hover{
+    display: flex;
+    width:20px;
+    height:20px;
+    border: palegoldenrod 1px solid;
+    padding:3px;
+    background-color: rgba(69, 69, 69, .3);
+    filter:contrast(170%);
+    border-radius: 100%;
+    margin-left:20px;
+    margin-bottom: 15px;
+    box-shadow: 0px 0px 10px dimgray;
+    
+}
+
+.uptwo:hover{
+  display: flex;
+    width:20px;
+    height:20px;
+    border: palegoldenrod 1px solid;
+    padding:3px;
+    background-color: rgba(69, 69, 69, .3);
+    filter:contrast(170%);
+    border-radius: 100%;
+    margin-left:20px;
+    margin-bottom: 15px;
+     box-shadow: 0px 0px 10px dimgray;
+    
+}
+
+    
+}
+
+@media only screen and (min-width: 850px){
+    
+    #map{
+   width:90%;
+    
+    align-self: flex-end;
+    margin-left: 3em;
+    border-radius: 10%;
+    filter:hue-rotate(70deg);
+/*
+    position: absolute;
+    top:50px;
+    left:140px;
+*/
+    box-shadow: 0px 0px 10px white;
+    padding:10px;
+}
+    
+       #twitterIcon, #knifeIcon, #ticketIcon{
+        width:60px;
+        height: 60px;
+           margin-top:23px;
+           margin-bottom: 23px;
+        
+    }
 }

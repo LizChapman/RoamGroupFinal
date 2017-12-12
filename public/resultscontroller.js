@@ -1,6 +1,6 @@
 var app = angular.module("myApp");
 
-app.controller('resultscontroller', function($scope, $timeout, Factory, seatgeekFactory, TwitterFactory, $location, geoFactory) {
+app.controller('resultscontroller', function($scope, $timeout, Factory, seatgeekFactory, TwitterFactory, $location, geoFactory, $anchorScroll) {
 Factory.getPosts().then(function(response){
 $timeout($scope.venues = response);
 console.log($scope.venues);
@@ -25,6 +25,9 @@ $scope.backtoResults = function(){
 $location.path('/resultsView');
  
     };
-    
+   $scope.scrollTo = function(id) {
+      $location.hash(id);
+      $anchorScroll();
+   };  
 
 });
