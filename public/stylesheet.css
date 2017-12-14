@@ -259,11 +259,12 @@ video#bgvid {
 
 .meetTheTeam{
     height: 100%;
-    padding:20px 0px;
+    padding-top:40px;
+    padding-bottom: 40px;
     padding-left: 8px;
     padding-right:10px;
     margin-left: 25px;
-    margin-top: 20px;
+/*    margin-top: 15px;*/
      background-color: rgba(66,64,47, .7);
     border-radius: 10%;
 }
@@ -288,13 +289,14 @@ h1{
 }
 
 .faceBoxBorder{
-    height:80%;
+/*    height:80%;*/
     display: flex;
-    flex-direction: row;
+    flex-flow: column nowrap;
+  
     background-color: rgba(66,64,47, .7);
-    padding:55px 12px;
+    padding:25px 12px;
     border-radius: 5%;
-    margin-top: 26px;
+    margin-top: 2px;
     margin-left: 20px;
 }
 
@@ -303,108 +305,102 @@ h1{
 }
 
 
+
 .Ganelle
 {
-    width:100px;
-    height: 100px;
-    border: white solid 3px;
-    border-radius: 100%;
-    margin:6px;
-    position: relative;
-  background: #CCFFFF; /* For browsers that do not support gradients */
-  background: -webkit-radial-gradient(circle, white, #CCFFFF, #660000 );  
-  background: -o-radial-gradient(circle, white, #CCFFFF, #660000 ); /* Opera 11.6 to 12.0 */
-  background: -moz-radial-gradient(circle, white, #CCFFFF, #660000 ); /* Firefox 3.6 to 15 */
-  background: radial-gradient(circle, white, #CCFFFF, #660000  ); /* Standard syntax */
+    display: flex;
+    flex-flow: column nowrap;
+ width:350px;
+
+    border: 5px palegoldenrod solid;
+ 
+    text-align: center;
+    font-size: 22px;
+    color:white;
+    padding:10px;
+/*    overflow: scroll;*/
+    margin: 10px 10px;
+    background-color: rgba(238, 232, 170, .25);
    
 }
 
 
 .Liz
 {
-    width:100px;
-    height: 100px;
-    border: white solid 3px;
-    border-radius: 100%;
-    margin:6px;
-    position: relative;
-     background:#CCFFFF; /* For browsers that do not support gradients */
-  background: -webkit-radial-gradient(circle, white, #CCFFFF, #660000 ); /* Safari */
-  background: -o-radial-gradient(circle, white, #CCFFFF, #660000 ); /* Opera 11.6 to 12.0 */
-  background: -moz-radial-gradient(circle, white, #CCFFFF, #660000 ); /* Firefox 3.6 to 15 */
-  background: radial-gradient(circle, white, #CCFFFF, #660000 ); /* Standard syntax */
+    display: flex;
+    flex-flow: column nowrap;
+ width:350px;
+
+    border: 5px palegoldenrod solid;
+ 
+    text-align: center;
+    font-size: 22px;
+    color:white;
+    padding:10px;
+/*    overflow: scroll;*/
+    margin: 10px 10px;
+    background-color: rgba(238, 232, 170, .15);
 }
 
 
 
 .Curtis
 {
-    width:100px;
-    height: 100px;
-    border: white solid 3px;
-    border-radius: 100%;
-    margin:6px;
-/*    margin-left: 45px;*/
-    position: relative;
-     background: #CCFFFF; /* For browsers that do not support gradients */
-  background: -webkit-radial-gradient(circle, white, #CCFFFF, #660000 ); /* Safari */
-  background: -o-radial-gradient(circle, white, #CCFFFF, #660000 ); /* Opera 11.6 to 12.0 */
-  background: -moz-radial-gradient(circle, white, #CCFFFF, #660000 ); /* Firefox 3.6 to 15 */
-  background: radial-gradient(circle, white, #CCFFFF, #660000 ); /* Standard syntax */
+    display: flex;
+    flex-flow: column nowrap;
+ width:350px;
+ 
+    border: 5px palegoldenrod solid;
+  
+    text-align: center;
+    font-size: 22px;
+    color:white;
+    padding:10px;
+/*    overflow: scroll;*/
+    margin: 10px 10px;
+    background-color: rgba(238, 232, 170, .25);
 }
 
 
 
 
 .Troy
-{    width:100px;
-    height: 100px;
-    border: white solid 3px;
-    border-radius: 100%;
-    margin:6px;
-/*    margin-left: 45px;*/
-    position: relative;
-     background: #CCFFFF; /* For browsers that do not support gradients */
-  background: -webkit-radial-gradient(circle, white, #CCFFFF, #660000 ); /* Safari */
-  background: -o-radial-gradient(circle, white, #CCFFFF, #660000 ); /* Opera 11.6 to 12.0 */
-  background: -moz-radial-gradient(circle, white, #CCFFFF, #660000 ); /* Firefox 3.6 to 15 */
-  background: radial-gradient(circle, white, #CCFFFF, #660000  ); /* Standard syntax */
+{    display: flex;
+    flex-flow: column nowrap;
+ width:350px;
+  
+    border: 5px palegoldenrod solid;
+    
+    text-align: center;
+    font-size: 22px;
+    color:white;
+    padding:10px;
+/*    overflow: scroll;*/
+    margin: 10px 10px;
+    background-color: rgba(238, 232, 170, .25);
 
 }
 
-
-
-.troyImg{
-    width:70%;
-    border-radius: 100%;
-    position: absolute;
-    left: 16px;
-    top:16px;  
+.ganelleInfo, .troyInfo, .lizInfo, .curtisInfo{
+    font-size: 14px;
+    text-align: center;
+    font-family: sans-serif;
+    font-weight: lighter;
+    line-height: 1.5em;
+   
+    
 }
 
-.lizImg{
-    width:70%;
+.lizPic, .troyPic, .ganellePic, .curtisPic{
+    width:115px;
+    height: 115px;
     border-radius: 100%;
-    position: absolute;
-    left: 16px;
-    top:16px;  
+    margin: 5px auto;
+     box-shadow: 0px 0px 15px white;
+    padding:8px;
 }
 
-.ganelleImg{
-    width:70%;
-    border-radius: 100%;
-    position: absolute;
-    left: 16px;
-    top:16px;  
-}
 
-.curtisImg{
-    width:70%;
-    border-radius: 100%;
-    position: absolute;
-    left: 16px;
-    top:16px;  
-}
 
 .socialMediaButtons>a>img{
     background-color: transparent;
@@ -559,25 +555,28 @@ foursquareResult:hover{
 
 .tweettext{
     font-family: serif;
-    font-size: 18px;
+    font-size: 14px;
     text-align: center;
     padding:20px;
+   
 }
 
 
 .mediaimg{
     max-width: 80px;
-    margin-left: 5%;
-    margin-bottom: -17px;
+    margin: auto;
+    margin-bottom: 0px;
+    margin-top: 10px;
     border-radius: 5%;
 }
 
 .mediaimg:hover{
     max-width: 350px;
+    position: relative;
 }
 
 .tweetauthor>p{
-    font-size: 18px;
+    font-size: 14px;
     font-family: 'Coustard', serif;
 }
 
@@ -1283,7 +1282,7 @@ font-size:18px;
     
     #map{
    width:90%;
-    
+    max-width: 600px; 
     align-self: flex-end;
     margin-left: 3em;
     border-radius: 10%;

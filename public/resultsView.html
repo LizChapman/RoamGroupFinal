@@ -70,9 +70,10 @@
                             
                     <div class="tweetauthor">
                                 <p>{{tweet.user.name}} | {{tweet.user.screen_name}} | {{tweet.user.location}}</p>
+                                <p><p class="tweettext">{{tweet.text}}</p>
                     </div>
-                </div> 
-                    <p class="tweettext">{{tweet.text}}<img class="mediaimg" ng-hide='img === tweet.extended_entities.media[0].media_url' class="img" src={{tweet.extended_entities.media[0].media_url}}></p>
+                </div>
+                    <img class="mediaimg" ng-hide='img === tweet.extended_entities.media[0].media_url' class="img" src={{tweet.extended_entities.media[0].media_url}}>
                  
                      
             </div>
